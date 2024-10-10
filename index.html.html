@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hama</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Center content horizontally */
+            justify-content: center;  /* Center content vertically */
+            min-height: 100vh;  /* Full height of the viewport */
+            margin: 0;  /* Remove default margin */
+            font-family: Arial, sans-serif;  /* Font style */
+        }
+
+        header, section, footer {
+            text-align: center;  /* Center text */
+            margin: 20px;  /* Spacing between elements */
+            padding: 20px;  /* Padding inside elements */
+            border: 1px solid #ccc;  /* Optional border */
+            border-radius: 10px;  /* Rounded corners */
+            width: 80%;  /* Width of sections */
+            max-width: 600px;  /* Maximum width */
+        }
+
+        button {
+            background-color: black; /* Button background color */
+            color: white;           /* Text color */
+            border: none;           /* Remove border */
+            padding: 10px 20px;     /* Padding around the text */
+            font-size: 16px;        /* Font size */
+            cursor: pointer;        /* Pointer cursor on hover */
+            border-radius: 5px;     /* Rounded corners */
+        }
+
+        button:hover {
+            background-color: darkgray; /* Change color on hover */
+        }
+    </style>
+    <script>
+        function openWelcomeTab() {
+            const newTab = window.open('', '_blank');
+            newTab.document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Welcome</title></head><body><h1>Welcome to Hama!</h1><p>This is your new tab.</p></body></html>');
+            newTab.document.close();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hama</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <button onclick="openWelcomeTab()">Open Welcome Tab</button>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Hama is dedicated to providing the best services and experiences. Learn more about what we do!</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of services tailored to your needs. Explore our offerings.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Hama. All rights reserved.</p>
+    </footer>
+</body>
+</html>
